@@ -1,0 +1,189 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Glassmorphism Login Form</title>
+	<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+      </head>
+      <body>
+      	<style>
+      		* {
+      			margin: 0;
+      			padding: 0;
+      		}
+      		body {
+      			height: 100vh;
+      			display: flex;
+      			overflow: hidden;
+      			align-items: center;
+      			justify-content: center;
+      			background-color: #141225;
+      		}
+  		.informbackground{
+  			margin: 0rem 2rem;
+  		}
+
+  		.informbackground,
+  		.inloginform{
+  			width: 25rem;
+  			height: 30rem;
+  			max-width: 320px;
+  			position: relative;
+  		}
+
+  		.circle{
+  			width: 10rem;
+  			height: 10rem;
+  			position: absolute;
+  			border-radius: 50%;
+  background-image: radial-gradient(circle, yellow, green);
+left: 230px;
+margin-top: 400px;
+
+
+  		}
+.circle:first-child {
+  			left: -20%;
+  			top: 12%
+  			background-color: linear-gradient( #144e7cfc, #1877f2);
+  			  background-image: radial-gradient(circle, pink, violet);
+  			  bottom: 390px;
+
+
+
+  		}
+  		
+
+  		.inloginform form{
+  			top: 50%;
+  			left: 50%;
+  			width: 16rem;
+  			height: 24rem;
+  			max-width: 320px;
+  			position: absolute;
+  			padding: 50px 35px;
+  			border-radius: 10px;
+  			backdrop-filter: blur(5px);
+  			transform: translate(-50%, -50%);
+  			box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  			border: 2px solid rgba(255, 255, 255, 0.1);
+  			background-color: rgba(255, 255, 255, 0.13);
+  		}
+
+  		form * {
+  			border: none;
+  			outline: none;
+  			color: #ffffff:
+  			letter-spacing: "poppins", sans-serif;
+  		}
+
+  		.title{
+  			font-size: 32px;
+  			font-weight: 500;
+  			line-height: 22px;
+  			text-align: center;
+  			color: #fff;
+  		}
+
+
+  		.inputgroup label{
+  			display: block;
+  			margin-top: 30px;
+  			font-size: 16px;
+  			font-weight : 500;
+  			color: #fff;
+
+  		}
+
+  		.inputgroup input{
+  			width: 98%;
+  			font-size: 14px;
+  			font-weight: 300;
+  			border-radius: 3px;
+  			background-color: rgba(255, 255, 255, 0.07);
+  			height: 50px;
+  			display: block;
+  			padding: 0 10px;
+  			margin-top: 8px;
+  		}
+
+  		::placeholder {
+
+
+color: #e5e5e5; }
+
+.submitform {
+	width: 250px;
+	z-index: 1;
+	margin-top: 30px;
+	color: #202020;
+	padding: 15px 0;
+	font-size: 18px;
+	font-weight: 600;
+	cursor: pointer;
+	overflow: hidden;
+	border-radius: 5px;
+	position: relative;
+	background:#fff;
+}
+
+
+
+.submitform:hover{
+	color: #fff;
+
+}
+
+
+
+.go,
+.tw,
+.fb{
+	display: inline;
+text-align: center;
+                
+                                padding: 7% 7% 7% 7%;
+                                color: #fff;
+                                line-height: 6.5;
+                                  			backdrop-filter: blur(5px);
+                                  			background-color: #969292;
+                                  			  			border-radius: 50%;
+margin-left: 20px;
+
+
+}
+      	</style>
+      	<div class="informbackground">
+      		<div class="circle"></div>
+      		<div class="circle"></div>
+      		<div class="inloginform">
+      			<form onsubmit="return false">
+      				<div class="title">
+      				<h3> Login Here</h3>      				
+      			</div>
+      		<div class="inputgroup">
+      			<label for="email">EMAIL</label>
+      			<input type="email" autocomplete="off" placeholder="Enter Email" id="email">
+
+      		
+      	</div>
+      	<div class="inputgroup">
+<label for="PASSWORD">PASSWORD</label>
+<input type="PASSWORD" autocomplete="off" placeholder="Enter Password" id="Password">
+</div>
+<button class="submitform">Log In</button>
+<div class="Social">
+	<div class="go"><i class="fab fa-google"></i></div>
+		<div class="fb"><i class="fab fa-facebook"></i></div>
+
+	<div class="tw"><i class="fab fa-twitter"></i></div>
+</div>
+</form>
+</div>
+</div>
+
+      	</body>
+      	</html>
